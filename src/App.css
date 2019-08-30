@@ -4,13 +4,67 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 70vmin;
   pointer-events: none;
 }
 
+.App-title {
+  width: 100vw;
+  margin-bottom: 20px;
+  border-top: 10px double white;
+  border-bottom: 10px double white;
+}
+
+.App-heading {
+  width: 100vw;
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Weapon-text {
+  color: white;
+  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Weapon-type {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.Weapon-container {
+  color: black;
+}
+
+.betweenText {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.Weapon-desc {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.Armory-weapon {
+  width: 100vw;
+  background-color: black;
+  border: double 2px white;
+  display: flex;
+  align-items: center;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  width: 100vw; 
   display: flex;
   flex-direction: column;
   align-items: center;
