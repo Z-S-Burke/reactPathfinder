@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import Weapons from './Weapons';
@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 const routing = (
     <Router>
       <div>
-        <Route path="/" component={App} />
+        <Route path="/" component={App} />  
         <Route path="/weapons" component={Weapons} />
         <Route path="/armor" component={Armor} />
       </div>

@@ -1,90 +1,71 @@
 import React, { Component } from 'react';
-// import weapons from '../../darksoulsarmory/weapons.json';
-const API = 'https://jgalat.github.io/ds-weapons-api';
-export default class Armor extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            armor: [],
-        };
-    }
+import './App.css';
+import * as bs from 'bootstrap/dist/css/bootstrap.css';
 
-    componentDidMount() {
-        fetch('https://cors-anywhere.herokuapp.com/' + API)
-            .then(response => response.json())
-            .then(data => this.setState({
-                armor: data
-            }));
-    }
+
+class Armor extends Component {
     render() {
-
-        const { armor } = this.state;
-        console.log(armor)
-
         return (
-            <span>
-                {armor.map((piece, index) => {
-                    console.log(piece)
-                    return (
-                        <div class="d-flex justify-content-center">
-                            <div class="primaryContainer d-flex justify-content-between flex-column border border-dark">
-                                <div class="d-flex justify-content-around armorHeading pt-3">
-                                    <div class="d-flex flex-column px-3">
-                                        <h1> Base_Name </h1>
-                                        <div class="d-flex justify-content-between">
-                                            <h4 class="pr-5">
-                                                category-category
-                                            </h4>
-                                            <h4>
-                                                weight
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-center text-warning display-2 align-items-center px-1">
-                                        <p> COST </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-around pt-3">
-                                    <div class="statBox d-flex justify-content-between">
-                                        <p class="pr-5"> AC BONUS: </p>
-                                        <p class="font-weight-bold"> X</p>
-                                    </div>
-                                    <div class="statBox d-flex justify-content-between">
-                                        <p class="pr-5"> MAX DEX: </p>
-                                        <p class="font-weight-bold"> X</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-around">
-                                    <div class="statBox d-flex justify-content-between">
-                                        <p class="pr-5"> AC PENALTY: </p>
-                                        <p class="font-weight-bold"> X</p>
-                                    </div>
-                                    <div class="statBox d-flex justify-content-between">
-                                        <p class="pr-5"> ARCANE FAILURE: </p>
-                                        <p class="font-weight-bold"> X</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-around">
-                                    <div class="statBox d-flex justify-content-between">
-                                        <p class="pr-5"> SHIELD BONUS: </p>
-                                        <p class="font-weight-bold"> X</p>
-                                    </div>
-                                    <div class="statBox d-flex justify-content-between">
-                                        <p class="pr-5"> SPEED: </p>
-                                        <p class="font-weight-bold"> X</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column px-5 pb-3">
-                                    <h2 class="font-italic"> SPECIAL: </h2>
-                                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dicta cum corporis sed. Facilis maiores, natus aliquid ratione vero cum tempore dolor dicta, harum repellat laudantium officiis eius sunt reiciendis.</p>
+            <div className="armor">
+                <div>
+                    <h1 className="bg-dark text-light pb-2"> Armor </h1>
+                </div>
+                <div className="d-flex justify-content-center">
+                    <div className="primaryContainer d-flex justify-content-between flex-column border border-dark">
+                        <div className="d-flex justify-content-around armorHeading pt-3">
+                            <div className="d-flex flex-column align-items-start px-3">
+                                <h1> Base_Name </h1>
+                                <div className="d-flex justify-content-between">
+                                    <p className="pr-5">
+                                        category-category
+                                    </p>
+                                    <p>
+                                        weight
+                                    </p>
                                 </div>
                             </div>
+                            <div className="d-flex justify-content-center text-warning align-items-center px-1">
+                                <h4> COST </h4>
+                            </div>
                         </div>
-                    )
-                })
-                }
-            </span>
+                        <div className="d-flex flex-column justify-content-center align-items-center">
+                            <div className="statBox d-flex justify-content-between">
+                                <p> AC BONUS: </p>
+                                <p className="font-weight-bold"> X</p>
+                            </div>
+                            <div className="statBox d-flex justify-content-between align-items-center">
+                                <p> MAX DEX: </p>
+                                <p className="font-weight-bold"> X</p>
+                            </div>
+                            <div className="statBox d-flex justify-content-between">
+                                <p> AC PENALTY: </p>
+                                <p className="font-weight-bold"> X</p>
+                            </div>
+                            <div className="statBox d-flex justify-content-between">
+                                <p> ARCANE FAILURE: </p>
+                                <p className="font-weight-bold"> X</p>
+                            </div>
+                            <div className="statBox d-flex justify-content-between">
+                                <p> SHIELD BONUS: </p>
+                                <p className="font-weight-bold"> X</p>
+                            </div>
+                            <div className="statBox d-flex justify-content-between">
+                                <p> SPEED: </p>
+                                <p className="font-weight-bold"> X</p>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column align-items-start">
+                            <h2 className="font-italic pl-2"> SPECIAL: </h2>
+                            <p className="px-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Id dicta cum corporis sed. Facilis maiores, 
+                                natus aliquid ratione vero cum tempore dolor dicta, 
+                                harum repellat laudantium officiis eius sunt reiciendis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         );
-
     }
 }
+
+export default Armor;
