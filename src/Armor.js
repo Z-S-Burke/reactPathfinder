@@ -17,7 +17,7 @@ class Armor extends Component {
                                 <h1> Base_Name </h1>
                                 <div className="d-flex justify-content-between">
                                     <p className="pr-5">
-                                        category-category
+                                        category
                                     </p>
                                     <p>
                                         weight
@@ -55,7 +55,7 @@ class Armor extends Component {
                             </div>
                         </div>
                         <div className="d-flex flex-column align-items-start">
-                            <h2 className="font-italic pl-2"> SPECIAL: </h2>
+                            <h2 className="font-italic pl-3"> SPECIAL: </h2>
                             <p className="px-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                 Id dicta cum corporis sed. Facilis maiores, 
                                 natus aliquid ratione vero cum tempore dolor dicta, 
