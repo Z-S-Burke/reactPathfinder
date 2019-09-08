@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 import Weapons from './Weapons';
 import Armor from './Armor';
@@ -26,7 +26,7 @@ class App extends Component {
         </Button>
         <Collapse in={open}>
           <div className="w-100 d-flex justify-content-around align-items-center">
-            <p> Character </p>
+            <Link> Character </Link>
             <Link to="/weapons"> Weapons </Link>
             <Link to="/armor"> Armor </Link>
           </div>
