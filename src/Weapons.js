@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 import * as bs from 'bootstrap/dist/css/bootstrap.css';
+import { Button, Collapse } from 'react-bootstrap';
+
 
 const API = 'https://jgalat.github.io/ds-weapons-api';
 export default class Weapons extends Component {
@@ -8,6 +10,28 @@ export default class Weapons extends Component {
     this.state = {
       weapons: [],
     };
+  }
+
+  weaponCollapse() {
+    const [open, setOpen] = useState(false);
+
+    return (
+      <div className="w-100 d-flex">
+        <Button
+          onClick={() => setOpen(!open)}
+          aria-controls="example-collapse-text"
+          aria-expanded={open}
+          className="bg-dark text-light"
+        >
+          SampleUser
+        </Button>
+        <Collapse in={open}>
+          <div className="w-100 d-flex justify-content-around align-items-center">
+            <p> Character </p>
+          </div>
+        </Collapse>
+      </div>
+    );
   }
 
   componentDidMount() {
@@ -21,6 +45,7 @@ export default class Weapons extends Component {
 
     const { weapons } = this.state;
     console.log(weapons)
+
 
     return (
       <span>
@@ -36,7 +61,7 @@ export default class Weapons extends Component {
                         <p className="Weapon-text">
                           {weapons[index].name}
                         </p>
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-around">
                           <p className="pr-5">
                             category
                           </p>
@@ -45,7 +70,7 @@ export default class Weapons extends Component {
                           </p>
                         </div>
                       </div>
-                      <div className="d-flex justify-content-center text-warning align-items-center">
+                      <div className="d-flex justify-content-center text-warning align-items-center pr-2">
                         <h4> COST </h4>
                       </div>
                     </div>
