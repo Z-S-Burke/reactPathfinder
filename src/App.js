@@ -26,7 +26,7 @@ class App extends Component {
         </Button>
         <Collapse in={open}>
           <div className="w-100 d-flex justify-content-around align-items-center">
-            <Link> Character </Link>
+            <p> Character </p>
             <Link to="/weapons"> Weapons </Link>
             <Link to="/armor"> Armor </Link>
           </div>

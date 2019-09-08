@@ -24,7 +24,6 @@
 }
 
 .Weapon-text {
-  color: white;
   font-size: 24px;
   text-align: left;
   font-weight: bold;
@@ -32,10 +31,8 @@
 }
 
 .Weapon-type {
-  color: white;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
 }
 
 .Weapon-container {
@@ -49,14 +46,12 @@
   align-items: center;
 }
 .Weapon-desc {
-  color: white;
   text-align: left;
   margin-left: 20px;
 }
 
 .Armory-weapon {
   width: 100vw;
-  background-color: black;
   border: double 2px white;
   display: flex;
   align-items: center;
@@ -105,4 +100,3 @@
 .armor {
   color: black;
 }
-
