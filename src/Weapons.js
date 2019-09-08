@@ -32,7 +32,7 @@ export default class Weapons extends Component {
                 <div className="d-flex justify-content-center">
                   <div className="primaryContainer d-flex justify-content-between flex-column border border-dark">
                     <div className="d-flex justify-content-around armorHeading pt-3">
-                      <div className="d-flex flex-column align-items-start px-3">
+                      <div className="d-flex flex-column px-3">
                         <p className="Weapon-text">
                           {weapons[index].name}
                         </p>
@@ -51,35 +51,37 @@ export default class Weapons extends Component {
                     </div>
                     <div className="d-flex flex-column">
                       <p className="Weapon-type"> Weapon Type: {weapons[index].weapon_type} </p>
-                      <p className="Weapon-desc"> Attack Type: {weapons[index].attack_type} </p>
-                      <p className="Weapon-desc"> Weight: {weapons[index].weight} </p>
-                      <p className="Weapon-desc"> Durability: {weapons[index].durability} </p>
+                      <div className="betweenText">
+                        <div>
+                          <p className="Weapon-desc"> Attack Type: {weapons[index].attack_type} </p>
+                        </div>
+                        <div>
+                          <p className="Weapon-desc"> Weight: {weapons[index].weight} </p>
+                        </div>
+                        <div>
+                          <p className="Weapon-desc"> Durability: {weapons[index].durability} </p>
+                        </div>
+                      </div>
                       <p className="Weapon-type"> Requirements: </p>
                       <div className="betweenText">
-                        <li className="Weapon-desc"> Dexterity: {weapons[index].requirements.dexterity} </li>
-                        <li className="Weapon-desc"> Faith: {weapons[index].requirements.faith} </li>
-                      </div>
-                      <div className="betweenText Weapon-desc">
-                        <li > Intelligence: {weapons[index].requirements.intelligence} </li>
-                        <li > Strength: {weapons[index].requirements.strength} </li>
+                        <p className="Weapon-desc"> Dexterity: {weapons[index].requirements.dexterity} </p>
+                        <p className="Weapon-desc"> Faith: {weapons[index].requirements.faith} </p>
+                        <p className="Weapon-desc"> Intelligence: {weapons[index].requirements.intelligence} </p>
+                        <p className="Weapon-desc"> Strength: {weapons[index].requirements.strength} </p>
                       </div>
                       <p className="Weapon-type"> Damage:</p>
-                      <div className="betweenText">
-                        <li className="Weapon-desc"> Physical: {weapons[index].damage.physical} </li>
-                        <li className="Weapon-desc"> Fire: {weapons[index].damage.fire} </li>
-                      </div>
-                      <div className="betweenText">
-                        <li className="Weapon-desc"> Lightning: {weapons[index].damage.lightning} </li>
-                        <li className="Weapon-desc"> Magic: {weapons[index].damage.magic} </li>
+                      <div className="d-flex align-items-center justify-content-around">
+                        <p className="Weapon-desc"> Physical: {weapons[index].damage.physical} </p>
+                        <p className="Weapon-desc"> Fire: {weapons[index].damage.fire} </p>
+                        <p className="Weapon-desc"> Lightning: {weapons[index].damage.lightning} </p>
+                        <p className="Weapon-desc"> Magic: {weapons[index].damage.magic} </p>
                       </div>
                       <p className="Weapon-type"> Bonus:</p>
                       <div className="betweenText">
-                        <li className="Weapon-desc"> Strength: {weapons[index].bonus.strength} </li>
-                        <li className="Weapon-desc"> Dexterity: {weapons[index].bonus.dexterity} </li>
-                      </div>
-                      <div className="betweenText">
-                        <li className="Weapon-desc"> Faith: {weapons[index].bonus.faith} </li>
-                        <li className="Weapon-desc"> Intelligence: {weapons[index].bonus.intelligence} </li>
+                        <p className="Weapon-desc"> Strength: {weapons[index].bonus.strength} </p>
+                        <p className="Weapon-desc"> Dexterity: {weapons[index].bonus.dexterity} </p>
+                        <p className="Weapon-desc"> Faith: {weapons[index].bonus.faith} </p>
+                        <p className="Weapon-desc"> Intelligence: {weapons[index].bonus.intelligence} </p>
                       </div>
                     </div>
                   </div>
