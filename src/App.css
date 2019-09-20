@@ -91,6 +91,7 @@
 
 .armorHeading {
   border-bottom: solid 10px black;
+  text-transform: uppercase;
 }
 
 .statBox {

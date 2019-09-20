@@ -66,10 +66,10 @@ export default class Weapons extends Component {
                         </p>
                         <div className="d-flex justify-content-around">
                           <p className="pr-5">
-                            category
+                            {weapons[index].weapon_type}
                           </p>
                           <p>
-                            weight
+                            {weapons[index].weight} lb
                           </p>
                         </div>
                       </div>
@@ -114,11 +114,11 @@ export default class Weapons extends Component {
                       <div className="d-flex flex-column statContainer justify-content-center align-items-center">
                         <div className="statBox d-flex justify-content-between pt-1">
                           <p> DAMAGE: </p>
-                          <p className="font-weight-bold"> X</p>
+                          <p className="font-weight-bold"> {weapons[index].damage.physical} </p>
                         </div>
                         <div className="statBox d-flex justify-content-between align-items-center">
                           <p> DAMAGE TYPE: </p>
-                          <p className="font-weight-bold"> X</p>
+                          <p className="font-weight-bold"> {weapons[index].attack_type} </p>
                         </div>
                         <div className="statBox d-flex justify-content-between">
                           <p> CRITICAL: </p>
