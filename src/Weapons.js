@@ -78,7 +78,7 @@ export default class Weapons extends Component {
                       </div>
                     </div>
                     <div className="d-flex flex-column">
-                      <p className="Weapon-type"> Weapon Type: {weapons[index].weapon_type} </p>
+                      {/* <p className="Weapon-type"> Weapon Type: {weapons[index].weapon_type} </p>
                       <div className="betweenText">
                         <div>
                           <p className="Weapon-desc"> Attack Type: {weapons[index].attack_type} </p>
@@ -110,6 +110,39 @@ export default class Weapons extends Component {
                         <p className="Weapon-desc"> Dexterity: {weapons[index].bonus.dexterity} </p>
                         <p className="Weapon-desc"> Faith: {weapons[index].bonus.faith} </p>
                         <p className="Weapon-desc"> Intelligence: {weapons[index].bonus.intelligence} </p>
+                      </div> */}
+                      <div className="d-flex flex-column statContainer justify-content-center align-items-center">
+                        <div className="statBox d-flex justify-content-between pt-1">
+                          <p> DAMAGE: </p>
+                          <p className="font-weight-bold"> X</p>
+                        </div>
+                        <div className="statBox d-flex justify-content-between align-items-center">
+                          <p> DAMAGE TYPE: </p>
+                          <p className="font-weight-bold"> X</p>
+                        </div>
+                        <div className="statBox d-flex justify-content-between">
+                          <p> CRITICAL: </p>
+                          <p className="font-weight-bold"> X</p>
+                        </div>
+                        <div className="statBox d-flex justify-content-between">
+                          <p> HANDS: </p>
+                          <p className="font-weight-bold"> X</p>
+                        </div>
+                        <div className="statBox d-flex justify-content-between">
+                          <p> RANGE: </p>
+                          <p className="font-weight-bold"> X</p>
+                        </div>
+                        <div className="statBox d-flex justify-content-between">
+                          <p> STYLE: </p>
+                          <p className="font-weight-bold"> X</p>
+                        </div>
+                        <div className="d-flex flex-column align-items-start">
+                          <h2 className="font-italic pl-3"> SPECIAL: </h2>
+                          <p className="px-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                              Id dicta cum corporis sed. Facilis maiores,
+                              natus aliquid ratione vero cum tempore dolor dicta,
+                                harum repellat laudantium officiis eius sunt reiciendis.</p>
+                        </div>
                       </div>
                     </div>
                   </div>

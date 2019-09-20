@@ -26,8 +26,8 @@ class Armor extends Component {
                                 <h4> COST </h4>
                             </div>
                         </div>
-                        <div className="d-flex flex-column justify-content-center align-items-center">
-                            <div className="statBox d-flex justify-content-between">
+                        <div className="d-flex flex-column statContainer justify-content-center align-items-center">
+                            <div className="statBox d-flex justify-content-between pt-1">
                                 <p> AC BONUS: </p>
                                 <p className="font-weight-bold"> X</p>
                             </div>
