@@ -61,9 +61,9 @@ export default class Weapons extends Component {
                   <div className="primaryContainer d-flex justify-content-between flex-column border border-dark">
                     <div className="d-flex justify-content-around armorHeading pt-3">
                       <div className="d-flex flex-column px-3">
-                        <p className="Weapon-text">
+                        <h2 className="Weapon-text">
                           {weapons[index].name}
-                        </p>
+                        </h2>
                         <div className="d-flex justify-content-around">
                           <p className="pr-5">
                             {weapons[index].weapon_type}
@@ -137,7 +137,7 @@ export default class Weapons extends Component {
                           <p className="font-weight-bold"> X</p>
                         </div>
                         <div className="d-flex flex-column align-items-start">
-                          <h2 className="pl-3"> SPECIAL: </h2>
+                          <h2 className="pl-3 pt-2"> BONUS: </h2>
                           <p className="font-italic px-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                               Id dicta cum corporis sed. Facilis maiores,
                               natus aliquid ratione vero cum tempore dolor dicta,
