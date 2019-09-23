@@ -53,8 +53,8 @@ class Armor extends Component {
                             </div>
                         </div>
                         <div className="d-flex flex-column align-items-start">
-                            <h2 className="font-italic pl-3"> SPECIAL: </h2>
-                            <p className="px-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            <h2 className="pl-3"> SPECIAL: </h2>
+                            <p className="font-italic px-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Id dicta cum corporis sed. Facilis maiores,
                                 natus aliquid ratione vero cum tempore dolor dicta,
                                 harum repellat laudantium officiis eius sunt reiciendis.</p>
