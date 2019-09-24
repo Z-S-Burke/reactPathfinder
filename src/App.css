@@ -36,6 +36,10 @@
   margin-left: 20px;
 }
 
+.characterInfo {
+  width: 100%;
+}
+
 .Weapon-container {
   color: black;
 }
