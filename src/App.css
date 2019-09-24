@@ -40,6 +40,13 @@
   width: 100%;
 }
 
+.abilityText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+}
+
 .Weapon-container {
   color: black;
 }
