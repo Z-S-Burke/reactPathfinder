@@ -78,39 +78,6 @@ export default class Weapons extends Component {
                       </div>
                     </div>
                     <div className="d-flex flex-column">
-                      {/* <p className="Weapon-type"> Weapon Type: {weapons[index].weapon_type} </p>
-                      <div className="betweenText">
-                        <div>
-                          <p className="Weapon-desc"> Attack Type: {weapons[index].attack_type} </p>
-                        </div>
-                        <div>
-                          <p className="Weapon-desc"> Weight: {weapons[index].weight} </p>
-                        </div>
-                        <div>
-                          <p className="Weapon-desc"> Durability: {weapons[index].durability} </p>
-                        </div>
-                      </div>
-                      <p className="Weapon-type"> Requirements: </p>
-                      <div className="betweenText">
-                        <p className="Weapon-desc"> Dexterity: {weapons[index].requirements.dexterity} </p>
-                        <p className="Weapon-desc"> Faith: {weapons[index].requirements.faith} </p>
-                        <p className="Weapon-desc"> Intelligence: {weapons[index].requirements.intelligence} </p>
-                        <p className="Weapon-desc"> Strength: {weapons[index].requirements.strength} </p>
-                      </div>
-                      <p className="Weapon-type"> Damage:</p>
-                      <div className="d-flex align-items-center justify-content-around">
-                        <p className="Weapon-desc"> Physical: {weapons[index].damage.physical} </p>
-                        <p className="Weapon-desc"> Fire: {weapons[index].damage.fire} </p>
-                        <p className="Weapon-desc"> Lightning: {weapons[index].damage.lightning} </p>
-                        <p className="Weapon-desc"> Magic: {weapons[index].damage.magic} </p>
-                      </div>
-                      <p className="Weapon-type"> Bonus:</p>
-                      <div className="betweenText">
-                        <p className="Weapon-desc"> Strength: {weapons[index].bonus.strength} </p>
-                        <p className="Weapon-desc"> Dexterity: {weapons[index].bonus.dexterity} </p>
-                        <p className="Weapon-desc"> Faith: {weapons[index].bonus.faith} </p>
-                        <p className="Weapon-desc"> Intelligence: {weapons[index].bonus.intelligence} </p>
-                      </div> */}
                       <div className="d-flex flex-column statContainer justify-content-center align-items-center">
                         <div className="statBox d-flex justify-content-between pt-1">
                           <p> DAMAGE: </p>
