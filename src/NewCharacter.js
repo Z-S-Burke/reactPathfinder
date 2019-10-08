@@ -8,15 +8,16 @@ class NewCharacter extends Component {
         return (
             <div className="armor">
                 <form>
-                    <input style="text" placeholder="NAME"/>
-                    <input style="text" placeholder="CLASS"/>
-                    <input style="text" placeholder="LEVEL"/>
-                    <input style="text" placeholder="STRENGTH"/>
-                    <input style="text" placeholder="DEXTERITY"/>
-                    <input style="text" placeholder="CONSTITUTION"/>
-                    <input style="text" placeholder="INTELLIGENCE"/>
-                    <input style="text" placeholder="WISDOM"/>
-                    <input style="text" placeholder="CHARISMA"/>
+                    <input type="text" placeholder="NAME"/>
+                    <input type="text" placeholder="CLASS"/>
+                    <input type="text" placeholder="LEVEL"/>
+                    <input type="text" placeholder="STRENGTH"/>
+                    <input type="text" placeholder="DEXTERITY"/>
+                    <input type="text" placeholder="CONSTITUTION"/>
+                    <input type="text" placeholder="INTELLIGENCE"/>
+                    <input type="text" placeholder="WISDOM"/>
+                    <input type="text" placeholder="CHARISMA"/>
+                    <input type="submit" value="Submit"/>
                 </form>
             </div>
         );
