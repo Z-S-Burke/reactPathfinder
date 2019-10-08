@@ -6,6 +6,7 @@ import App from './App';
 import Weapons from './Weapons';
 import Armor from './Armor';
 import Character from './Character';
+import NewCharacter from './NewCharacter';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -15,6 +16,7 @@ const routing = (
         <Route path="/character" component={Character} />
         <Route path="/weapons" component={Weapons} />
         <Route path="/armor" component={Armor} />
+        <Route path="/newCharacter" component={NewCharacter} />
       </div>
     </Router>
   )

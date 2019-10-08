@@ -7,7 +7,7 @@ export default class Character extends Component {
     render() {
         return (
             <div className="armor">
-                <h1 className="bg-dark text-light my-2 pb-2"> Character </h1>
+                <h1 className="bg-dark text-light my-2 pb-2 d-flex justify-content-center"> Character </h1>
                 <div className="d-flex justify-content-center">
                     <div className="primaryContainer d-flex justify-content-between flex-column border border-dark">
                         <div className="d-flex justify-content-between armorHeading pt-3">
@@ -47,7 +47,7 @@ export default class Character extends Component {
                         </div>
                         <div className="d-flex flex-column align-items-start">
                             <h3 className="pl-3 pt-2"> CHARACTER TRAITS: </h3>
-                            <div className="d-flex characterInfo justify-content-around">
+                            <div className="d-flex characterInfo justify-content-around ml-3">
                                 <div className="characterInfo d-flex flex-column justify-content-around">
                                     <p >
                                         HEIGHT

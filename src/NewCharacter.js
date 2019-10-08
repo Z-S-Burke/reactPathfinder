@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import './App.css';
 import * as bs from 'bootstrap/dist/css/bootstrap.css';
 
 
 class NewCharacter extends Component {
     render() {
         return (
-            <div className="armor">
-                <form>
-                    <input type="text" placeholder="NAME"/>
-                    <input type="text" placeholder="CLASS"/>
-                    <input type="text" placeholder="LEVEL"/>
-                    <input type="text" placeholder="STRENGTH"/>
-                    <input type="text" placeholder="DEXTERITY"/>
-                    <input type="text" placeholder="CONSTITUTION"/>
-                    <input type="text" placeholder="INTELLIGENCE"/>
-                    <input type="text" placeholder="WISDOM"/>
-                    <input type="text" placeholder="CHARISMA"/>
-                    <input type="submit" value="Submit"/>
+            <div>
+                <h1 className="bg-dark text-light my-2 pb-2 d-flex justify-content-center"> New Character </h1>
+                <form className="d-flex flex-column border border-dark py-3 px-3">
+                    <label className="w-100"> Name: <input type="text" placeholder="NAME" /> </label>
+                    <label> Class: <input type="text" placeholder="CLASS" /> </label>
+                    <label> Level: <input type="text" placeholder="LEVEL" /> </label>
+                    <label> Strength: <input type="text" placeholder="STRENGTH" /> </label>
+                    <label> Dexterity: <input type="text" placeholder="DEXTERITY" /> </label>
+                    <label> Constitution: <input type="text" placeholder="CONSTITUTION" /> </label>
+                    <label> Intelligence: <input type="text" placeholder="INTELLIGENCE" /> </label>
+                    <label> Wisdom: <input type="text" placeholder="WISDOM" /> </label>
+                    <label> Charisma: <input type="text" placeholder="CHARISMA" /> </label>
+                    <input className="text-light bg-dark d-flex justify-content-center" type="submit" value="Submit" />
                 </form>
             </div>
         );

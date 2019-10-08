@@ -50,7 +50,7 @@ export default class Weapons extends Component {
     return (
       <span>
         <div>
-          <h1 className="bg-dark text-light my-2 pb-2"> Weapons </h1>
+          <h1 className="bg-dark text-light my-2 pb-2 d-flex justify-content-center"> Weapons </h1>
         </div>
         {weapons.map((weapon, index) => {
           console.log(weapon)

@@ -7,7 +7,7 @@ class Armor extends Component {
     render() {
         return (
             <div className="armor">
-                <h1 className="bg-dark text-light my-2 pb-2"> Armor </h1>
+                <h1 className="bg-dark text-light my-2 pb-2 d-flex justify-content-center"> Armor </h1>
                 <div className="d-flex justify-content-center">
                     <div className="primaryContainer d-flex justify-content-between flex-column border border-dark">
                         <div className="d-flex justify-content-around armorHeading pt-3">
