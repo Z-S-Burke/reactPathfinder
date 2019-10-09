@@ -47,8 +47,8 @@ class App extends Component {
             <Navbar className="d-flex justify-content-between align-items-center">
               <this.navHeader />
             </Navbar>
-            <h1 className="App-heading"> Character Builder </h1>
-            <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-heading d-flex justify-content-center"> Character Builder </h1>
+            <img src={logo} className="App-logo ml-5" alt="logo" />
             <Route path="/character" component={Character} />
             <Route path="/weapons" component={Weapons} />
             <Route path="/armor" component={Armor} />
