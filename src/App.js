@@ -24,10 +24,10 @@ class App extends Component {
           aria-expanded={open}
           className="bg-dark text-light"
         >
-          SampleUser
+          User
         </Button>
         <Collapse in={open}>
-          <div className="w-100 d-flex flex-column justify-content-around align-items-center">
+          <div className="w-100 d-flex justify-content-around align-items-center">
             <Link to="/character"> Character </Link>
             <Link to="/weapons"> Weapons </Link>
             <Link to="/armor"> Armor </Link>
