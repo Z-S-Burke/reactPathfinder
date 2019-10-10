@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import Select from 'react-select';
 import * as bs from 'bootstrap/dist/css/bootstrap.css';
 
 
 class NewCharacter extends Component {
+    
     render() {
         return (
             <div>
@@ -30,8 +32,12 @@ class NewCharacter extends Component {
                     <label> Alignment: <input className="w-100 border" type="text" placeholder="ALIGNMENT" /> </label>
                     <label> Deity: <input className="w-100 border" type="text" placeholder="DEITY" /> </label>
                     <h2> SKILLS </h2>
+                    <Select className="mb-3"/>
                     <h2> INVENTORY </h2>
-                    <input className="text-light bg-dark d-flex justify-content-center" type="submit" value="Submit" />
+                    <Select className="mb-3"/>
+                    <h2> BACKGROUND </h2>
+                    <label> Flavor Text: <input className="w-100 border" type="text" placeholder="Start typing..." /> </label>
+                    <input className="text-light bg-dark d-flex justify-content-center p-1" type="submit" value="Submit" />
                 </form>
             </div>
         );
