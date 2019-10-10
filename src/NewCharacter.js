@@ -20,15 +20,15 @@ class NewCharacter extends Component {
                     <label> Wisdom: <input className="w-100 border" type="text" placeholder="WISDOM" /> </label>
                     <label> Charisma: <input className="w-100 border" type="text" placeholder="CHARISMA" /> </label>
                     <h2> CHARACTER TRAITS </h2>
-                    <label> Height: <input className="w-100 border" type="text" placeholder="NAME" /> </label>
-                    <label> Weight: <input className="w-100 border" type="text" placeholder="RACE" /> </label>
-                    <label> Gender: <input className="w-100 border" type="text" placeholder="CLASS" /> </label>
-                    <label> Hair: <input className="w-100 border" type="text" placeholder="LEVEL" /> </label>
-                    <label> Age: <input className="w-100 border" type="text" placeholder="STRENGTH" /> </label>
-                    <label> Size: <input className="w-100 border" type="text" placeholder="DEXTERITY" /> </label>
-                    <label> Homeland: <input className="w-100 border" type="text" placeholder="CONSTITUTION" /> </label>
-                    <label> Alignment: <input className="w-100 border" type="text" placeholder="INTELLIGENCE" /> </label>
-                    <label> Deity: <input className="w-100 border" type="text" placeholder="WISDOM" /> </label>
+                    <label> Height: <input className="w-100 border" type="text" placeholder="HEIGHT" /> </label>
+                    <label> Weight: <input className="w-100 border" type="text" placeholder="WEIGHT" /> </label>
+                    <label> Gender: <input className="w-100 border" type="text" placeholder="GENDER" /> </label>
+                    <label> Hair: <input className="w-100 border" type="text" placeholder="HAIR" /> </label>
+                    <label> Age: <input className="w-100 border" type="text" placeholder="AGE" /> </label>
+                    <label> Size: <input className="w-100 border" type="text" placeholder="SIZE" /> </label>
+                    <label> Homeland: <input className="w-100 border" type="text" placeholder="HOMELAND" /> </label>
+                    <label> Alignment: <input className="w-100 border" type="text" placeholder="ALIGNMENT" /> </label>
+                    <label> Deity: <input className="w-100 border" type="text" placeholder="DEITY" /> </label>
                     <input className="text-light bg-dark d-flex justify-content-center" type="submit" value="Submit" />
                 </form>
             </div>
