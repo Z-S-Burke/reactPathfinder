@@ -8,7 +8,7 @@ class NewCharacter extends Component {
             <div>
                 <h1 className="bg-dark text-light my-2 pb-2 d-flex justify-content-center"> New Character </h1>
                 <form className="d-flex flex-column border border-dark py-3 px-3">
-                    <h2> BASE INFO </h2>
+                    <h2> BASIC INFO </h2>
                     <label> Name: <input className="w-100 border" type="text" placeholder="NAME" /> </label>
                     <label> Race: <input className="w-100 border" type="text" placeholder="RACE" /> </label>
                     <label> Class: <input className="w-100 border" type="text" placeholder="CLASS" /> </label>
@@ -29,6 +29,8 @@ class NewCharacter extends Component {
                     <label> Homeland: <input className="w-100 border" type="text" placeholder="HOMELAND" /> </label>
                     <label> Alignment: <input className="w-100 border" type="text" placeholder="ALIGNMENT" /> </label>
                     <label> Deity: <input className="w-100 border" type="text" placeholder="DEITY" /> </label>
+                    <h2> SKILLS </h2>
+                    <h2> INVENTORY </h2>
                     <input className="text-light bg-dark d-flex justify-content-center" type="submit" value="Submit" />
                 </form>
             </div>
