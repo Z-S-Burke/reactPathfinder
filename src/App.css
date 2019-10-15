@@ -35,6 +35,11 @@
   margin-left: 20px;
 }
 
+.loginForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .characterInfo {
   width: 100%;
 }
