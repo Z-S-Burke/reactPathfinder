@@ -10,8 +10,8 @@ class Register extends Component {
                 <div className="d-flex flex-column align-items-center">
                     <form className="d-flex flex-column py-3 px-3">
                         <div className="loginForm">
+                            <h2> Register a new account </h2>
                             <label> Username: <input className="border w-100" type="text" /> </label>
-                            <label> Email: <input className="border w-100" type="text" /> </label>
                             <label> E-mail: <input className="border w-100" type="text" /> </label>
                             <label> Password: <input className="border w-100" type="text" /> </label>
                         </div>

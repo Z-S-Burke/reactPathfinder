@@ -6,6 +6,20 @@ import * as bs from 'bootstrap/dist/css/bootstrap.css';
 
 class User extends Component {
 
+
+    registrationForm() {
+        return (
+            <div className="w-100 d-flex">
+                <div className="w-100 d-flex justify-content-around align-items-center">
+                    <div className="mt-3">
+                        <p> Don't have an account? </p>
+                        <Link to="/register"> Click here to register. </Link>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     render() {
         return (
             <div>
@@ -17,10 +31,7 @@ class User extends Component {
                                 <label> Password: <input className="border w-100" type="text" /> </label>
                             </div>
                             <input className="text-light bg-dark d-flex justify-content-center p-1" type="submit" value="Submit" />
-                            <div className="mt-3">
-                                <p> Don't have an account? </p>
-                                <Link to="/register"> Click here to register. </Link>
-                            </div>
+                            <this.registrationForm />
                         </form>
                     </div>
                     <Route path="/register" component={Register} />
