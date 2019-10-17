@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import Register from './Register';
 import * as bs from 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -22,7 +23,7 @@ class User extends Component {
                             </div>
                         </form>
                     </div>
-                    <Route path="/router" component={Router} />
+                    <Route path="/register" component={Register} />
                 </Router>
             </div>
         );

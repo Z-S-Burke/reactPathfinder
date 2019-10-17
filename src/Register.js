@@ -11,6 +11,7 @@ class Register extends Component {
                     <form className="d-flex flex-column py-3 px-3">
                         <div className="loginForm">
                             <label> Username: <input className="border w-100" type="text" /> </label>
+                            <label> Email: <input className="border w-100" type="text" /> </label>
                             <label> E-mail: <input className="border w-100" type="text" /> </label>
                             <label> Password: <input className="border w-100" type="text" /> </label>
                         </div>

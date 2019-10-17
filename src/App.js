@@ -6,6 +6,7 @@ import Armor from './Armor';
 import User from './User';
 import Character from './Character';
 import NewCharacter from './NewCharacter';
+import Register from './Register';
 import { Navbar, Button, Collapse } from 'react-bootstrap';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
@@ -49,6 +50,7 @@ class App extends Component {
             <Route path="/weapons" component={Weapons} />
             <Route path="/armor" component={Armor} />
             <Route path="/newCharacter" component={NewCharacter} />
+            <Route path="/register" component={Register} />
           </Router>
         </header>
       </div>

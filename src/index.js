@@ -8,6 +8,7 @@ import Armor from './Armor';
 import Character from './Character';
 import NewCharacter from './NewCharacter';
 import User from './User';
+import Register from './Register';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -19,6 +20,7 @@ const routing = (
         <Route path="/armor" component={Armor} />
         <Route path="/newCharacter" component={NewCharacter} />
         <Route path="/user" component={User} />
+        <Route path="/register" component={Register} />
       </div>
     </Router>
   )
