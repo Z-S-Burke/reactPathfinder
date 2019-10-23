@@ -12,28 +12,6 @@ export default class Weapons extends Component {
     };
   }
 
-  weaponCollapse() {
-    const [open, setOpen] = useState(false);
-
-    return (
-      <div className="w-100 d-flex">
-        <Button
-          onClick={() => setOpen(!open)}
-          aria-controls="example-collapse-text"
-          aria-expanded={open}
-          className="bg-dark text-light"
-        >
-          SampleUser
-        </Button>
-        <Collapse in={open}>
-          <div className="w-100 d-flex justify-content-around align-items-center">
-            <p> Character </p>
-          </div>
-        </Collapse>
-      </div>
-    );
-  }
-
   componentDidMount() {
     fetch('https://cors-anywhere.herokuapp.com/' + API)
       .then(response => response.json())
