@@ -1,6 +1,5 @@
 import React, { useState, Component } from 'react';
 import * as bs from 'bootstrap/dist/css/bootstrap.css';
-import { Button, Collapse } from 'react-bootstrap';
 
 
 const API = 'https://jgalat.github.io/ds-weapons-api';
